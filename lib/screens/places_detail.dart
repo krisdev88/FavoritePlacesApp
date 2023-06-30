@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import '../models/place.dart';
+
+final String? YOUR_API_KEY = dotenv.env['GOOGLE_MAP_API'];
 
 class PlaceDetailScreen extends StatelessWidget {
   const PlaceDetailScreen({super.key, required this.place});
