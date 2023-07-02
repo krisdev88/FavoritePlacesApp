@@ -21,6 +21,7 @@ class PlacesList extends StatelessWidget {
         ),
       );
     }
+
     return ListView.builder(
       itemCount: places.length,
       itemBuilder: (ctx, index) => ListTile(
@@ -42,13 +43,11 @@ class PlacesList extends StatelessWidget {
               .bodySmall!
               .copyWith(color: Theme.of(context).colorScheme.onBackground),
         ),
-        onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (ctx) => PlaceDetailScreen(place: places[index]),
-            ),
-          );
-        },
+        onTap: () => Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (ctx) => PlaceDetailScreen(place: places[index]),
+          ),
+        ),
       ),
     );
   }

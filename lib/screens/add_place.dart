@@ -11,9 +11,7 @@ class AddPlaceScreen extends ConsumerStatefulWidget {
   const AddPlaceScreen({super.key});
 
   @override
-  ConsumerState<AddPlaceScreen> createState() {
-    return _AddPlaceScreenState();
-  }
+  ConsumerState<AddPlaceScreen> createState() => _AddPlaceScreenState();
 }
 
 class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
@@ -27,7 +25,6 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
     if (enteredTitle.isEmpty ||
         _selectedImage == null ||
         _selectedLocation == null) {
-      //TODO Showdialog
       return;
     }
     ref
@@ -62,15 +59,11 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
             ),
             const SizedBox(height: 10),
             ImageInput(
-              onPickImage: (image) {
-                _selectedImage = image;
-              },
+              onPickImage: (image) => _selectedImage = image,
             ),
             const SizedBox(height: 10),
             LocationInput(
-              onSelectLocation: (location) {
-                _selectedLocation = location;
-              },
+              onSelectLocation: (location) => _selectedLocation = location,
             ),
             const SizedBox(height: 16),
             ElevatedButton.icon(

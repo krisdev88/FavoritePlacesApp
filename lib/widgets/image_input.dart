@@ -9,9 +9,7 @@ class ImageInput extends StatefulWidget {
   final void Function(File image) onPickImage;
 
   @override
-  State<ImageInput> createState() {
-    return _ImageInputState();
-  }
+  State<ImageInput> createState() => _ImageInputState();
 }
 
 class _ImageInputState extends State<ImageInput> {
@@ -27,9 +25,7 @@ class _ImageInputState extends State<ImageInput> {
     if (pickedImage == null) {
       return;
     }
-    setState(() {
-      _selectedImage = File(pickedImage.path);
-    });
+    setState(() => _selectedImage = File(pickedImage.path));
     widget.onPickImage(_selectedImage!);
   }
 

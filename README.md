@@ -1,15 +1,19 @@
 # Save Favourite Place
-This app makes it easy to collect your favorite places on your device in the form of: description, photo and location.
 
-Application built on the basis of the course "Flutter and Dart - The Complite Guide 2023 " by Maximilian Schwarzmüller.
+This app makes it easy to collect your favorite places on your device in the form of: description,
+photo and location.
+
+Application built on the basis of the course "Flutter and Dart - The Complite Guide 2023 " by
+Maximilian Schwarzmüller.
 
 ## Application Details:
 
 - Architecture: [FLutter SDK](https://docs.flutter.dev/)
 - API: [GoogleMaps](https://mapsplatform.google.com/)
-- Platform: Android
+- Platform: Android, iOS
 
 ## Features
+
 - Take a picture of your favorite place
 - Mark the location of the place on the map or set the user's current location.
 - Present favorite places on the list
@@ -30,7 +34,7 @@ Application built on the basis of the course "Flutter and Dart - The Complite Gu
 
 7. Navigate to **lib/.env** and paste your API keys to the relevant variables
    ```
-   GOOGLE_MAP_API=Paste Your WeatherAPI Key Here
+   GOOGLE_MAPS_API_KEY=Paste Your GoogleMapsApiKey Here
    ```
 8. Run the app using flutter run
 
