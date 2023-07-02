@@ -1,4 +1,4 @@
-# Save Favourite Place
+# Favourite Places
 
 This app makes it easy to collect your favorite places on your device in the form of: description,
 photo and location.
